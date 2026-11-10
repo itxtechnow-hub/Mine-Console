@@ -5,7 +5,7 @@
     {"id":"anthropic","name":"Anthropic","category":"apikey","website":"https://console.anthropic.com/","baseUrl":"https://api.anthropic.com","protocol":"anthropic","verified":true},
     {"id":"google-ai-studio","name":"Google AI Studio","category":"apikey","website":"https://aistudio.google.com/app/apikey","baseUrl":"https://generativelanguage.googleapis.com/v1beta/openai","protocol":"openai"},
     {"id":"groq","name":"Groq","category":"apikey","website":"https://console.groq.com/keys","baseUrl":"https://api.groq.com/openai/v1","protocol":"openai","verified":true},
-    {"id":" together-ai","name":"Together AI","category":"apikey","website":"https://api.together.ai/settings/api-keys","baseUrl":"https://api.together.xyz/v1","protocol":"openai"},
+    {"id":"together-ai","name":"Together AI","category":"apikey","website":"https://api.together.ai/settings/api-keys","baseUrl":"https://api.together.xyz/v1","protocol":"openai"},
     {"id":"fireworks","name":"Fireworks AI","category":"apikey","website":"https://fireworks.ai/","baseUrl":"https://api.fireworks.ai/inference/v1","protocol":"openai"},
     {"id":"deepseek","name":"DeepSeek","category":"apikey","website":"https://platform.deepseek.com/","baseUrl":"https://api.deepseek.com/v1","protocol":"openai"},
     {"id":"mistral","name":"Mistral AI","category":"apikey","website":"https://console.mistral.ai/","baseUrl":"https://api.mistral.ai/v1","protocol":"openai"},
