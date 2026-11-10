@@ -1,0 +1,13 @@
+import { notFound } from "next/navigation";
+import { getConfig, maskSecret } from "@/lib/store";
+import ProviderActions from "@/components/provider-actions";
+export const dynamic = "force-dynamic";
+export default async function ProviderDetail({params}:{params:Promise<{id:string}>}) {
+ const {id}=await params;const config=await getConfig();const conn=config.connections[id];if(!conn)notFound();
+ return <div><h1 className="text-xl font-semibold tracking-tight" style={{fontStretch:"118%"}}>{conn.label}</h1><p className="mt-1 font-mono text-xs text-dim">{conn.providerId} · {conn.protocol}</p>
+ <div className="mt-6 grid gap-4 sm:grid-cols-2"><div className="rounded-md border border-line bg-panel p-4"><p className="text-xs text-dim">Status</p><p className={`mt-1 text-sm ${conn.status==="verified"?"text-ok":conn.status==="failed"?"text-bad":"text-ink"}`}>{conn.status}{conn.lastLatencyMs!=null&&<span className="ml-2 font-mono text-xs text-dim">{conn.lastLatencyMs}ms</span>}</p>{conn.lastTestedAt&&<p className="mt-1 text-[11px] text-dim">Last tested {new Date(conn.lastTestedAt).toISOString().replace("T"," ").slice(0,16)} UTC</p>}</div>
+ <div className="rounded-md border border-line bg-panel p-4"><p className="text-xs text-dim">API key</p><p className="mt-1 font-mono text-sm">{maskSecret(conn.keyEnc)}</p><p className="mt-1 text-[11px] text-dim">Encrypted at rest · never returned to the browser</p></div></div>
+ <ProviderActions conn={{id:conn.id,label:conn.label,baseUrl:conn.baseUrl,protocol:conn.protocol}}/>
+ <div className="mt-6 rounded-md border border-line bg-panel p-5"><h2 className="text-sm font-semibold">Models ({(conn.models||[]).length})</h2>{(conn.models||[]).length===0?<p className="mt-2 text-sm text-dim">None yet — run Discover models. If the provider does not support listing, add models manually in Combos or by editing the connection.</p>:<ul className="mt-3 grid gap-x-6 gap-y-1 sm:grid-cols-2">{conn.models.map(m=><li key={m.id} className="flex items-baseline justify-between border-t border-line py-1.5 font-mono text-xs"><span className="truncate">{m.id}</span><span className={`ml-3 shrink-0 text-[10px] ${m.source==="discovered"?"text-ok":"text-copper"}`}>{m.source}</span></li>)}</ul>}</div>
+ <div className="mt-6 rounded-md border border-line bg-panel p-5"><h2 className="text-sm font-semibold">Model source</h2><pre className="mt-3 overflow-x-auto rounded-md border border-line bg-basalt p-4 font-mono text-xs leading-relaxed text-dim">{JSON.stringify({id:"<model-id>",owned_by:conn.providerId,source:"discovered",provider:{connection:conn.id,name:conn.label,base_url:conn.baseUrl,protocol:conn.protocol}},null,2)}</pre></div></div>;
+}
