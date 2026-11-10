@@ -1,21 +1,2634 @@
 {
-  "count": 16,
+  "source": "converted from cheaper-inference/OmniRoute src/shared/constants/providers",
+  "generatedAt": "2026-11-10T18:12:50.801Z",
+  "count": 321,
   "providers": [
-    {"id":"openai","name":"OpenAI","category":"apikey","website":"https://platform.openai.com/api-keys","baseUrl":"https://api.openai.com/v1","protocol":"openai","verified":true},
-    {"id":"anthropic","name":"Anthropic","category":"apikey","website":"https://console.anthropic.com/","baseUrl":"https://api.anthropic.com","protocol":"anthropic","verified":true},
-    {"id":"google-ai-studio","name":"Google AI Studio","category":"apikey","website":"https://aistudio.google.com/app/apikey","baseUrl":"https://generativelanguage.googleapis.com/v1beta/openai","protocol":"openai"},
-    {"id":"groq","name":"Groq","category":"apikey","website":"https://console.groq.com/keys","baseUrl":"https://api.groq.com/openai/v1","protocol":"openai","verified":true},
-    {"id":"together-ai","name":"Together AI","category":"apikey","website":"https://api.together.ai/settings/api-keys","baseUrl":"https://api.together.xyz/v1","protocol":"openai"},
-    {"id":"fireworks","name":"Fireworks AI","category":"apikey","website":"https://fireworks.ai/","baseUrl":"https://api.fireworks.ai/inference/v1","protocol":"openai"},
-    {"id":"deepseek","name":"DeepSeek","category":"apikey","website":"https://platform.deepseek.com/","baseUrl":"https://api.deepseek.com/v1","protocol":"openai"},
-    {"id":"mistral","name":"Mistral AI","category":"apikey","website":"https://console.mistral.ai/","baseUrl":"https://api.mistral.ai/v1","protocol":"openai"},
-    {"id":"xai","name":"xAI","category":"apikey","website":"https://console.x.ai/","baseUrl":"https://api.x.ai/v1","protocol":"openai"},
-    {"id":"cerebras","name":"Cerebras","category":"apikey","website":"https://cloud.cerebras.ai/","baseUrl":"https://api.cerebras.ai/v1","protocol":"openai"},
-    {"id":"sambanova","name":"SambaNova","category":"apikey","website":"https://cloud.sambanova.ai/","baseUrl":"https://api.sambanova.ai/v1","protocol":"openai"},
-    {"id":"perplexity","name":"Perplexity","category":"apikey","website":"https://www.perplexity.ai/settings/api","baseUrl":"https://api.perplexity.ai","protocol":"openai"},
-    {"id":"openrouter","name":"OpenRouter","category":"apikey","website":"https://openrouter.ai/keys","baseUrl":"https://openrouter.ai/api/v1","protocol":"openai","verified":true},
-    {"id":"nebius","name":"Nebius AI Studio","category":"apikey","website":"https://studio.nebius.ai/","baseUrl":"https://api.studio.nebius.ai/v1","protocol":"openai"},
-    {"id":"novita","name":"Novita AI","category":"apikey","website":"https://novita.ai/","baseUrl":"https://api.novita.ai/v3/openai","protocol":"openai"},
-    {"id":"ollama","name":"Ollama","category":"local","website":"https://ollama.com/","baseUrl":"http://localhost:11434/v1","protocol":"openai"}
-  ]
+    {
+      "id": "oneminai",
+      "category": "apikey",
+      "name": "1min.AI",
+      "website": "https://1min.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "cheaperinference",
+      "category": "apikey",
+      "name": "Cheaper Inference",
+      "website": "https://cheaperinference.com/?utm_source=omniroute",
+      "gatewayReady": false
+    },
+    {
+      "id": "agentrouter",
+      "category": "apikey",
+      "name": "AgentRouter",
+      "website": "https://agentrouter.org",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "unorouter",
+      "category": "apikey",
+      "name": "UnoRouter",
+      "hasFree": true,
+      "website": "https://unorouter.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "command-code",
+      "category": "apikey",
+      "name": "Command Code",
+      "website": "https://commandcode.ai/",
+      "gatewayReady": false
+    },
+    {
+      "id": "openrouter",
+      "category": "apikey",
+      "name": "OpenRouter",
+      "website": "https://openrouter.ai",
+      "hasFree": true,
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "protocol": "openai",
+      "verified": true,
+      "gatewayReady": true
+    },
+    {
+      "id": "opper",
+      "category": "apikey",
+      "name": "Opper",
+      "website": "https://opper.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "requesty",
+      "category": "apikey",
+      "name": "Requesty",
+      "website": "https://requesty.ai",
+      "hasFree": true,
+      "baseUrl": "https://router.requesty.ai/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "zylo-api",
+      "category": "apikey",
+      "name": "Zylo API",
+      "website": "https://zyloai.net",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "fastrouter",
+      "category": "apikey",
+      "name": "FastRouter",
+      "website": "https://fastrouter.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "anyapi",
+      "category": "apikey",
+      "name": "AnyAPI AI",
+      "website": "https://anyapi.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "electronhub",
+      "category": "apikey",
+      "name": "Electron Hub",
+      "website": "https://www.electronhub.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "llmgateway",
+      "category": "apikey",
+      "name": "LLM Gateway",
+      "website": "https://llmgateway.io",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "lyceum",
+      "category": "apikey",
+      "name": "Lyceum",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "llm-kiwi",
+      "category": "apikey",
+      "name": "LLM.Kiwi",
+      "website": "https://llm.kiwi",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "literouter",
+      "category": "apikey",
+      "name": "LiteRouter",
+      "website": "https://literouter.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "greenpt",
+      "category": "apikey",
+      "name": "GreenPT",
+      "website": "https://greenpt.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "eurouter",
+      "category": "apikey",
+      "name": "EURouter",
+      "website": "https://eurouter.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "y-api",
+      "category": "apikey",
+      "name": "Y-API",
+      "website": "https://y-api.bestvirtualgoods.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "mnn-ai",
+      "category": "apikey",
+      "name": "MNN AI",
+      "website": "https://mnnai.ru",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "meganova-ai",
+      "category": "apikey",
+      "name": "MegaNova AI",
+      "website": "https://meganova.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "mixlayer",
+      "category": "apikey",
+      "name": "Mixlayer",
+      "website": "https://www.mixlayer.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "speka",
+      "category": "apikey",
+      "name": "Speka AI",
+      "website": "https://speka.me",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "tokenreply",
+      "category": "apikey",
+      "name": "TokenReply",
+      "website": "https://www.tokenreply.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "yolo-auto",
+      "category": "apikey",
+      "name": "Yolo-Auto",
+      "website": "https://yolo-auto.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "dxnt",
+      "category": "apikey",
+      "name": "DXNT / DX Token",
+      "website": "https://www.dxnt.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "cloudcode-one",
+      "category": "apikey",
+      "name": "CloudCode.ONE",
+      "website": "https://cloudcode.one",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "ofoxai",
+      "category": "apikey",
+      "name": "OfoxAI",
+      "website": "https://ofox.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "zerolimitai",
+      "category": "apikey",
+      "name": "ZeroLimitAI",
+      "website": "https://www.zerolimitai.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "chatanywhere",
+      "category": "apikey",
+      "name": "ChatAnywhere",
+      "website": "https://chatanywhere.tech",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "helyxai",
+      "category": "apikey",
+      "name": "Helyx AI",
+      "website": "https://helyxai.space",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "auriko",
+      "category": "apikey",
+      "name": "Auriko",
+      "website": "https://www.auriko.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "poixe-ai",
+      "category": "apikey",
+      "name": "Poixe AI",
+      "website": "https://poixe.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "naga-ai",
+      "category": "apikey",
+      "name": "Naga AI",
+      "website": "https://naga.ac",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "chat-oripe",
+      "category": "apikey",
+      "name": "Chat Oripe",
+      "website": "https://api.oriper.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "freeinference",
+      "category": "apikey",
+      "name": "FreeInference",
+      "website": "https://freeinference.org",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "free-ai",
+      "category": "apikey",
+      "name": "Free.ai",
+      "website": "https://free.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "dgrid",
+      "category": "apikey",
+      "name": "DGrid",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "qiniu",
+      "category": "apikey",
+      "name": "Qiniu",
+      "website": "https://www.qiniu.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "orcarouter",
+      "category": "apikey",
+      "name": "OrcaRouter",
+      "website": "https://www.orcarouter.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "api-airforce",
+      "category": "apikey",
+      "name": "Api.airforce",
+      "website": "https://api.airforce",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "crof",
+      "category": "apikey",
+      "name": "CrofAI",
+      "website": "https://crof.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "bazaarlink",
+      "category": "apikey",
+      "name": "BazaarLink",
+      "website": "https://bazaarlink.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "synthetic",
+      "category": "apikey",
+      "name": "Synthetic",
+      "website": "https://synthetic.new",
+      "gatewayReady": false
+    },
+    {
+      "id": "kilo-gateway",
+      "category": "apikey",
+      "name": "Kilo Gateway",
+      "website": "https://kilo.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "wafer",
+      "category": "apikey",
+      "name": "Wafer AI",
+      "website": "https://wafer.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "opencode-zen",
+      "category": "apikey",
+      "name": "OpenCode Zen",
+      "website": "https://opencode.ai/zen",
+      "gatewayReady": false
+    },
+    {
+      "id": "opencode-go",
+      "category": "apikey",
+      "name": "OpenCode Go",
+      "website": "https://opencode.ai/go",
+      "gatewayReady": false
+    },
+    {
+      "id": "dahl",
+      "category": "apikey",
+      "name": "Dahl",
+      "website": "https://inference.dahl.global",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "freetheai",
+      "category": "apikey",
+      "name": "FreeTheAi",
+      "website": "https://freetheai.org",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "g4f-gemini",
+      "category": "apikey",
+      "name": "g4f.space — Gemini",
+      "website": "https://g4f.space",
+      "gatewayReady": false
+    },
+    {
+      "id": "g4f-pollinations",
+      "category": "apikey",
+      "name": "g4f.space — Pollinations",
+      "website": "https://g4f.space",
+      "gatewayReady": false
+    },
+    {
+      "id": "beatapi",
+      "category": "apikey",
+      "name": "BeatAPI",
+      "website": "https://beatapi.io",
+      "gatewayReady": false
+    },
+    {
+      "id": "openai",
+      "category": "apikey",
+      "name": "OpenAI",
+      "website": "https://platform.openai.com",
+      "baseUrl": "https://api.openai.com/v1",
+      "protocol": "openai",
+      "verified": true,
+      "gatewayReady": true
+    },
+    {
+      "id": "reka",
+      "category": "apikey",
+      "name": "Reka",
+      "website": "https://docs.reka.ai/chat/overview",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "pioneer",
+      "category": "apikey",
+      "name": "Pioneer AI",
+      "website": "https://pioneer.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "uc-direct",
+      "category": "apikey",
+      "name": "UC Direct (uncensored.com)",
+      "website": "https://uncensored.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "anthropic",
+      "category": "apikey",
+      "name": "Anthropic",
+      "website": "https://platform.claude.com",
+      "baseUrl": "https://api.anthropic.com",
+      "protocol": "anthropic",
+      "verified": true,
+      "gatewayReady": true
+    },
+    {
+      "id": "gemini",
+      "category": "apikey",
+      "name": "Gemini (Google AI Studio)",
+      "website": "https://aistudio.google.com",
+      "hasFree": true,
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "protocol": "openai",
+      "verified": true,
+      "gatewayReady": true
+    },
+    {
+      "id": "groq",
+      "category": "apikey",
+      "name": "Groq",
+      "website": "https://groq.com",
+      "hasFree": true,
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "protocol": "openai",
+      "verified": true,
+      "gatewayReady": true
+    },
+    {
+      "id": "blackbox",
+      "category": "apikey",
+      "name": "Blackbox AI",
+      "website": "https://blackbox.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "xai",
+      "category": "apikey",
+      "name": "xAI (Grok)",
+      "website": "https://x.ai",
+      "baseUrl": "https://api.x.ai/v1",
+      "protocol": "openai",
+      "verified": true,
+      "gatewayReady": true
+    },
+    {
+      "id": "mistral",
+      "category": "apikey",
+      "name": "Mistral",
+      "website": "https://mistral.ai",
+      "hasFree": true,
+      "baseUrl": "https://api.mistral.ai/v1",
+      "protocol": "openai",
+      "verified": true,
+      "gatewayReady": true
+    },
+    {
+      "id": "perplexity",
+      "category": "apikey",
+      "name": "Perplexity",
+      "website": "https://www.perplexity.ai",
+      "baseUrl": "https://api.perplexity.ai",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "perplexity-agent",
+      "category": "apikey",
+      "name": "Perplexity Agent",
+      "website": "https://www.perplexity.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "cohere",
+      "category": "apikey",
+      "name": "Cohere",
+      "website": "https://cohere.com",
+      "hasFree": true,
+      "baseUrl": "https://api.cohere.com/compatibility/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "meta-llama",
+      "category": "apikey",
+      "name": "Meta Llama API",
+      "website": "https://llama.developer.meta.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "morph",
+      "category": "apikey",
+      "name": "Morph",
+      "website": "https://morphllm.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "galadriel",
+      "category": "apikey",
+      "name": "Galadriel",
+      "website": "https://galadriel.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "ai21",
+      "category": "apikey",
+      "name": "AI21 Labs",
+      "website": "https://www.ai21.com",
+      "hasFree": true,
+      "baseUrl": "https://api.ai21.com/studio/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "venice",
+      "category": "apikey",
+      "name": "Venice.ai",
+      "website": "https://venice.ai",
+      "baseUrl": "https://api.venice.ai/api/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "codestral",
+      "category": "apikey",
+      "name": "Codestral",
+      "website": "https://mistral.ai",
+      "baseUrl": "https://api.codestral.com/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "upstage",
+      "category": "apikey",
+      "name": "Upstage",
+      "website": "https://www.upstage.ai",
+      "baseUrl": "https://api.upstage.ai/v1/solar",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "maritalk",
+      "category": "apikey",
+      "name": "Maritalk",
+      "website": "https://www.maritaca.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "nous-research",
+      "category": "apikey",
+      "name": "Nous Research",
+      "website": "https://portal.nousresearch.com/help",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "arcee-ai",
+      "category": "apikey",
+      "name": "Arcee AI",
+      "website": "https://arcee.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "liquid",
+      "category": "apikey",
+      "name": "Liquid AI",
+      "website": "https://liquid.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "inception",
+      "category": "apikey",
+      "name": "Inception",
+      "website": "https://docs.inceptionlabs.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "writer",
+      "category": "apikey",
+      "name": "Writer",
+      "website": "https://dev.writer.com",
+      "baseUrl": "https://api.writer.com/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "together",
+      "category": "apikey",
+      "name": "Together AI",
+      "website": "https://www.together.ai",
+      "baseUrl": "https://api.together.xyz/v1",
+      "protocol": "openai",
+      "verified": true,
+      "gatewayReady": true
+    },
+    {
+      "id": "openvecta",
+      "category": "apikey",
+      "name": "OpenVecta",
+      "website": "https://openvecta.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "openference-api",
+      "category": "apikey",
+      "name": "Openference API",
+      "website": "https://openference.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "fireworks",
+      "category": "apikey",
+      "name": "Fireworks AI",
+      "website": "https://fireworks.ai",
+      "hasFree": true,
+      "baseUrl": "https://api.fireworks.ai/inference/v1",
+      "protocol": "openai",
+      "verified": true,
+      "gatewayReady": true
+    },
+    {
+      "id": "cerebras",
+      "category": "apikey",
+      "name": "Cerebras",
+      "website": "https://inference.cerebras.ai",
+      "hasFree": true,
+      "baseUrl": "https://api.cerebras.ai/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "nvidia",
+      "category": "apikey",
+      "name": "NVIDIA NIM",
+      "website": "https://build.nvidia.com",
+      "hasFree": true,
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "nebius",
+      "category": "apikey",
+      "name": "Nebius AI",
+      "website": "https://nebius.com",
+      "hasFree": true,
+      "baseUrl": "https://api.studio.nebius.ai/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "nube",
+      "category": "apikey",
+      "name": "Nube.sh",
+      "website": "https://nube.sh",
+      "gatewayReady": false
+    },
+    {
+      "id": "siliconflow",
+      "category": "apikey",
+      "name": "SiliconFlow",
+      "website": "https://cloud.siliconflow.com",
+      "hasFree": true,
+      "baseUrl": "https://api.siliconflow.cn/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "hyperbolic",
+      "category": "apikey",
+      "name": "Hyperbolic",
+      "website": "https://hyperbolic.xyz",
+      "hasFree": true,
+      "baseUrl": "https://api.hyperbolic.xyz/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "ollama-cloud",
+      "category": "apikey",
+      "name": "Ollama Cloud",
+      "website": "https://ollama.com/settings/keys",
+      "hasFree": true,
+      "baseUrl": "https://ollama.com/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "huggingface",
+      "category": "apikey",
+      "name": "HuggingFace",
+      "website": "https://huggingface.co",
+      "hasFree": true,
+      "baseUrl": "https://router.huggingface.co/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "deepinfra",
+      "category": "apikey",
+      "name": "DeepInfra",
+      "hasFree": true,
+      "baseUrl": "https://api.deepinfra.com/v1/openai",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "lambda-ai",
+      "category": "apikey",
+      "name": "Lambda AI",
+      "website": "https://lambda.ai",
+      "baseUrl": "https://api.lambda.ai/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "runcrate",
+      "category": "apikey",
+      "name": "Runcrate",
+      "website": "https://www.runcrate.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "sambanova",
+      "category": "apikey",
+      "name": "SambaNova",
+      "website": "https://sambanova.ai",
+      "hasFree": true,
+      "baseUrl": "https://api.sambanova.ai/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "nscale",
+      "category": "apikey",
+      "name": "nScale",
+      "website": "https://nscale.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "baseten",
+      "category": "apikey",
+      "name": "Baseten",
+      "website": "https://baseten.co",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "publicai",
+      "category": "apikey",
+      "name": "PublicAI",
+      "website": "https://publicai.co",
+      "gatewayReady": false
+    },
+    {
+      "id": "friendliai",
+      "category": "apikey",
+      "name": "FriendliAI",
+      "website": "https://friendli.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "wandb",
+      "category": "apikey",
+      "name": "Weights & Biases Inference",
+      "website": "https://wandb.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "inference-net",
+      "category": "apikey",
+      "name": "Inference.net",
+      "website": "https://inference.net",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "predibase",
+      "category": "apikey",
+      "name": "Predibase",
+      "website": "https://predibase.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "bytez",
+      "category": "apikey",
+      "name": "Bytez",
+      "website": "https://bytez.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "monsterapi",
+      "category": "apikey",
+      "name": "MonsterAPI",
+      "website": "https://monsterapi.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "modelscope",
+      "category": "apikey",
+      "name": "ModelScope",
+      "website": "https://modelscope.cn",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "byteplus",
+      "category": "apikey",
+      "name": "BytePlus ModelArk",
+      "website": "https://console.byteplus.com/ark",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "digitalocean",
+      "category": "apikey",
+      "name": "DigitalOcean",
+      "website": "https://docs.digitalocean.com/products/ai-platform/",
+      "gatewayReady": false
+    },
+    {
+      "id": "azure-openai",
+      "category": "apikey",
+      "name": "Azure OpenAI",
+      "website": "https://azure.microsoft.com/products/ai-services/openai-service",
+      "gatewayReady": false
+    },
+    {
+      "id": "azure-ai",
+      "category": "apikey",
+      "name": "Azure AI Foundry",
+      "website": "https://learn.microsoft.com/azure/ai-foundry",
+      "gatewayReady": false
+    },
+    {
+      "id": "bedrock",
+      "category": "apikey",
+      "name": "Amazon Bedrock",
+      "website": "https://aws.amazon.com/bedrock",
+      "gatewayReady": false
+    },
+    {
+      "id": "watsonx",
+      "category": "apikey",
+      "name": "IBM watsonx.ai Gateway",
+      "website": "https://www.ibm.com/products/watsonx-ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "oci",
+      "category": "apikey",
+      "name": "OCI Generative AI",
+      "website": "https://www.oracle.com/artificial-intelligence/generative-ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "sap",
+      "category": "apikey",
+      "name": "SAP Generative AI Hub",
+      "gatewayReady": false
+    },
+    {
+      "id": "modal",
+      "category": "apikey",
+      "name": "Modal",
+      "website": "https://modal.com/docs",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "vertex",
+      "category": "apikey",
+      "name": "Vertex AI",
+      "website": "https://cloud.google.com/vertex-ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "vertex-partner",
+      "category": "apikey",
+      "name": "Vertex AI Partners",
+      "website": "https://cloud.google.com/vertex-ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "cloudflare-ai",
+      "category": "apikey",
+      "name": "Cloudflare Workers AI",
+      "website": "https://developers.cloudflare.com/workers-ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "scaleway",
+      "category": "apikey",
+      "name": "Scaleway AI",
+      "website": "https://www.scaleway.com/en/docs/ai-data/generative-apis/",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "ovhcloud",
+      "category": "apikey",
+      "name": "OVHcloud AI",
+      "website": "https://www.ovhcloud.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "heroku",
+      "category": "apikey",
+      "name": "Heroku AI",
+      "website": "https://www.heroku.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "databricks",
+      "category": "apikey",
+      "name": "Databricks",
+      "website": "https://www.databricks.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "datarobot",
+      "category": "apikey",
+      "name": "DataRobot",
+      "website": "https://docs.datarobot.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "clarifai",
+      "category": "apikey",
+      "name": "Clarifai",
+      "website": "https://docs.clarifai.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "snowflake",
+      "category": "apikey",
+      "name": "Snowflake Cortex",
+      "website": "https://www.snowflake.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "qianfan",
+      "category": "apikey",
+      "name": "Baidu Qianfan",
+      "website": "https://cloud.baidu.com/product-s/qianfan_home",
+      "baseUrl": "https://qianfan.baidubce.com/v2",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "glm",
+      "category": "apikey",
+      "name": "GLM Coding",
+      "website": "https://z.ai/subscribe",
+      "baseUrl": "https://api.z.ai/api/paas/v4",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "glm-cn",
+      "category": "apikey",
+      "name": "GLM Coding (China)",
+      "website": "https://open.bigmodel.cn",
+      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "bigmodel",
+      "category": "apikey",
+      "name": "BigModel.cn (Zhipu)",
+      "website": "https://open.bigmodel.cn",
+      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "glmt",
+      "category": "apikey",
+      "name": "GLM Thinking",
+      "website": "https://open.bigmodel.cn",
+      "gatewayReady": false
+    },
+    {
+      "id": "bailian-coding-plan",
+      "category": "apikey",
+      "name": "Alibaba Token Plan",
+      "website": "https://www.alibabacloud.com/help/en/model-studio/token-plan-overview",
+      "gatewayReady": false
+    },
+    {
+      "id": "qwen-cloud",
+      "category": "apikey",
+      "name": "Qwen Cloud",
+      "website": "https://www.qwencloud.com/",
+      "baseUrl": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "qwen-cloud-token-plan",
+      "category": "apikey",
+      "name": "Qwen Cloud Token Plan",
+      "website": "https://www.qwencloud.com/pricing/token-plan",
+      "gatewayReady": false
+    },
+    {
+      "id": "kimi",
+      "category": "apikey",
+      "name": "Kimi (Legacy Moonshot API)",
+      "website": "https://platform.kimi.ai?aff=omniroute",
+      "baseUrl": "https://api.moonshot.ai/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "kimi-coding-apikey",
+      "category": "apikey",
+      "name": "Kimi Code API Key",
+      "website": "https://www.kimi.ai/code?aff=omniroute",
+      "gatewayReady": false
+    },
+    {
+      "id": "minimax",
+      "category": "apikey",
+      "name": "Minimax Coding",
+      "website": "https://www.minimax.io",
+      "baseUrl": "https://api.minimax.io/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "minimax-cn",
+      "category": "apikey",
+      "name": "Minimax (China)",
+      "website": "https://www.minimaxi.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "deepseek",
+      "category": "apikey",
+      "name": "DeepSeek",
+      "website": "https://platform.deepseek.com",
+      "hasFree": true,
+      "baseUrl": "https://api.deepseek.com/v1",
+      "protocol": "openai",
+      "verified": true,
+      "gatewayReady": true
+    },
+    {
+      "id": "zai",
+      "category": "apikey",
+      "name": "Z.AI",
+      "website": "https://z.ai/model-api",
+      "baseUrl": "https://api.z.ai/api/paas/v4",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "alibaba",
+      "category": "apikey",
+      "name": "Alibaba Cloud Model Studio",
+      "website": "https://bailian.console.alibabacloud.com/",
+      "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "alibaba-cn",
+      "category": "apikey",
+      "name": "Alibaba (China)",
+      "website": "https://dashscope.console.aliyun.com/",
+      "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "longcat",
+      "category": "apikey",
+      "name": "LongCat AI",
+      "website": "https://longcat.chat/platform/docs",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "moonshot",
+      "category": "apikey",
+      "name": "Kimi",
+      "website": "https://platform.kimi.ai?aff=omniroute",
+      "baseUrl": "https://api.moonshot.ai/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "volcengine",
+      "category": "apikey",
+      "name": "Volcengine",
+      "website": "https://www.volcengine.com",
+      "baseUrl": "https://ark.cn-beijing.volces.com/api/v3",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "volcengine-agent-plan",
+      "category": "apikey",
+      "name": "Volcengine Ark Agent Plan",
+      "website": "https://console.volcengine.com/ark/region:cn-beijing/subscription/agent-plan",
+      "gatewayReady": false
+    },
+    {
+      "id": "volcengine-coding-plan",
+      "category": "apikey",
+      "name": "Volcengine Ark Coding Plan",
+      "website": "https://console.volcengine.com/ark/region:cn-beijing/subscription/coding-plan",
+      "gatewayReady": false
+    },
+    {
+      "id": "gigachat",
+      "category": "apikey",
+      "name": "GigaChat (Sber)",
+      "website": "https://developers.sber.ru",
+      "gatewayReady": false
+    },
+    {
+      "id": "xiaomi-mimo",
+      "category": "apikey",
+      "name": "Xiaomi MiMo",
+      "website": "https://mimo.mi.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "xiaomi-mimo-token-plan",
+      "category": "apikey",
+      "name": "Xiaomi MiMo Token Plan",
+      "website": "https://mimo.mi.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "baidu",
+      "category": "apikey",
+      "name": "Baidu (ERNIE)",
+      "website": "https://ernie.baidu.com/",
+      "hasFree": true,
+      "baseUrl": "https://qianfan.baidubce.com/v2",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "tencent",
+      "category": "apikey",
+      "name": "Tencent Hunyuan",
+      "website": "https://hunyuan.tencent.com",
+      "hasFree": true,
+      "baseUrl": "https://api.hunyuan.cloud.tencent.com/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "iflytek",
+      "category": "apikey",
+      "name": "iFlytek Spark",
+      "website": "https://xinghuo.xfyun.cn",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "baichuan",
+      "category": "apikey",
+      "name": "Baichuan",
+      "website": "https://www.baichuan-ai.com/",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "yi",
+      "category": "apikey",
+      "name": "Yi (01.AI)",
+      "website": "https://01.ai",
+      "baseUrl": "https://api.lingyiwanwu.com/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "stepfun",
+      "category": "apikey",
+      "name": "StepFun",
+      "website": "https://stepfun.com",
+      "hasFree": true,
+      "baseUrl": "https://api.stepfun.com/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "coze",
+      "category": "apikey",
+      "name": "Coze",
+      "website": "https://coze.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "360ai",
+      "category": "apikey",
+      "name": "360 AI",
+      "website": "https://ai.360.cn",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "doubao",
+      "category": "apikey",
+      "name": "Doubao",
+      "website": "https://doubao.com",
+      "hasFree": true,
+      "baseUrl": "https://ark.cn-beijing.volces.com/api/v3",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "sensenova",
+      "category": "apikey",
+      "name": "SenseNova",
+      "website": "https://platform.sensenova.cn",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "sparkdesk",
+      "category": "apikey",
+      "name": "SparkDesk",
+      "website": "https://xinghuo.xfyun.cn",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "hcnsec",
+      "category": "apikey",
+      "name": "Huancheng Public API",
+      "website": "https://api.hcnsec.cn",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "agnes",
+      "category": "apikey",
+      "name": "Agnes AI",
+      "website": "https://agnes-ai.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "agnes-cn",
+      "category": "apikey",
+      "name": "Agnes AI (China)",
+      "website": "https://api.agnes-ai.cn",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "clova-studio",
+      "category": "apikey",
+      "name": "Naver CLOVA Studio",
+      "website": "https://api.ncloud-docs.com/docs/en/ai-naver-clovastudio-summary",
+      "gatewayReady": false
+    },
+    {
+      "id": "internlm",
+      "category": "apikey",
+      "name": "InternLM (Intern-S1)",
+      "website": "https://internlm.intern-ai.org.cn/",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "ant-ling",
+      "category": "apikey",
+      "name": "Ant Ling / Ring (inclusionAI)",
+      "website": "https://developer.ant-ling.com/en/docs/",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "sarvam",
+      "category": "apikey",
+      "name": "Sarvam AI",
+      "website": "https://docs.sarvam.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "plamo",
+      "category": "apikey",
+      "name": "PLaMo",
+      "website": "https://plamo.preferredai.jp/api",
+      "gatewayReady": false
+    },
+    {
+      "id": "typhoon",
+      "category": "apikey",
+      "name": "Typhoon",
+      "website": "https://docs.opentyphoon.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "apmix",
+      "category": "apikey",
+      "name": "Apmix",
+      "website": "https://apmix.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "nlpcloud",
+      "category": "apikey",
+      "name": "NLP Cloud",
+      "website": "https://docs.nlpcloud.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "runwayml",
+      "category": "apikey",
+      "name": "Runway",
+      "website": "https://docs.dev.runwayml.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "kie",
+      "category": "apikey",
+      "name": "KIE.AI",
+      "website": "https://kie.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "pollinations",
+      "category": "apikey",
+      "name": "Pollinations AI",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "haiper",
+      "category": "apikey",
+      "name": "Haiper",
+      "website": "https://haiper.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "leonardo",
+      "category": "apikey",
+      "name": "Leonardo AI",
+      "website": "https://leonardo.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "ideogram",
+      "category": "apikey",
+      "name": "Ideogram",
+      "website": "https://ideogram.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "magnific",
+      "category": "apikey",
+      "name": "Magnific",
+      "website": "https://www.magnific.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "udio",
+      "category": "apikey",
+      "name": "Udio",
+      "website": "https://udio.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "v0-vercel",
+      "category": "apikey",
+      "name": "v0 (Vercel)",
+      "website": "https://v0.dev",
+      "baseUrl": "https://api.v0.dev/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "gitlab",
+      "category": "apikey",
+      "name": "GitLab Duo PAT",
+      "website": "https://docs.gitlab.com/user/duo_agent_platform/code_suggestions/",
+      "gatewayReady": false
+    },
+    {
+      "id": "voyage-ai",
+      "category": "apikey",
+      "name": "Voyage AI",
+      "website": "https://www.voyageai.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "jina-ai",
+      "category": "apikey",
+      "name": "Jina AI (Foundation API)",
+      "website": "https://jina.ai",
+      "hasFree": true,
+      "baseUrl": "https://api.jina.ai/v1",
+      "protocol": "openai",
+      "verified": false,
+      "gatewayReady": true
+    },
+    {
+      "id": "typesafe",
+      "category": "apikey",
+      "name": "TypeSafe AI",
+      "website": "https://docs.typesafe.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "fal-ai",
+      "category": "apikey",
+      "name": "Fal.ai",
+      "website": "https://fal.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "stability-ai",
+      "category": "apikey",
+      "name": "Stability AI",
+      "website": "https://stability.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "black-forest-labs",
+      "category": "apikey",
+      "name": "Black Forest Labs",
+      "website": "https://blackforestlabs.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "recraft",
+      "category": "apikey",
+      "name": "Recraft",
+      "website": "https://recraft.ai",
+      "gatewayReady": false
+    },
+    {
+      "id": "topaz",
+      "category": "apikey",
+      "name": "Topaz",
+      "website": "https://topazlabs.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "segmind",
+      "category": "apikey",
+      "name": "Segmind",
+      "website": "https://segmind.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "dify",
+      "category": "apikey",
+      "name": "Dify",
+      "website": "https://dify.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "nomic",
+      "category": "apikey",
+      "name": "Nomic",
+      "website": "https://nomic.ai",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "mixedbread",
+      "category": "apikey",
+      "name": "Mixedbread AI",
+      "website": "https://www.mixedbread.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "jina-reader",
+      "category": "apikey",
+      "name": "Jina Reader (r.jina.ai)",
+      "website": "https://jina.ai/reader",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "tinyfish",
+      "category": "apikey",
+      "name": "TinyFish Fetch",
+      "website": "https://docs.tinyfish.ai/fetch-api",
+      "gatewayReady": false
+    },
+    {
+      "id": "deepai",
+      "category": "apikey",
+      "name": "DeepAI",
+      "website": "https://deepai.org",
+      "gatewayReady": false
+    },
+    {
+      "id": "cursor-api",
+      "category": "apikey",
+      "name": "Cursor API",
+      "website": "https://cursor.com/dashboard/api",
+      "gatewayReady": false
+    },
+    {
+      "id": "ainetcafe",
+      "category": "apikey",
+      "name": "ainetcafe",
+      "website": "https://ainetcafe.com/k3/",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "onomeo",
+      "category": "apikey",
+      "name": "onomeo",
+      "website": "https://onomeo.com",
+      "hasFree": true,
+      "gatewayReady": false
+    },
+    {
+      "id": "unifically",
+      "category": "apikey",
+      "name": "Unifically",
+      "website": "https://unifically.com",
+      "gatewayReady": false
+    },
+    {
+      "id": "ghe-copilot",
+      "category": "oauth",
+      "name": "GitHub Enterprise Copilot",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "xai-oauth",
+      "category": "oauth",
+      "name": "xAI OAuth (Grok)",
+      "website": "https://x.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "openference",
+      "category": "oauth",
+      "name": "Openference",
+      "website": "https://openference.com",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "grok-cli",
+      "category": "oauth",
+      "name": "Grok Build",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "qoder",
+      "category": "oauth",
+      "name": "Qoder",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "agy",
+      "category": "oauth",
+      "name": "Antigravity CLI",
+      "website": "https://antigravity.google",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "kiro",
+      "category": "oauth",
+      "name": "Kiro AI",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "amazon-q",
+      "category": "oauth",
+      "name": "Amazon Q",
+      "website": "https://aws.amazon.com/q/developer/",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "claude",
+      "category": "oauth",
+      "name": "Claude Code",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "antigravity",
+      "category": "oauth",
+      "name": "Antigravity",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "codex",
+      "category": "oauth",
+      "name": "OpenAI Codex",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "github",
+      "category": "oauth",
+      "name": "GitHub Copilot",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "gitlab-duo",
+      "category": "oauth",
+      "name": "GitLab Duo",
+      "website": "https://docs.gitlab.com/user/duo_agent_platform/code_suggestions/",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "cursor",
+      "category": "oauth",
+      "name": "Cursor IDE",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "zed",
+      "category": "oauth",
+      "name": "Zed IDE",
+      "website": "https://zed.dev",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "zed-hosted",
+      "category": "oauth",
+      "name": "Zed Hosted Models",
+      "website": "https://zed.dev",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "trae",
+      "category": "oauth",
+      "name": "Trae",
+      "website": "https://trae.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "kimi-coding",
+      "category": "oauth",
+      "name": "Kimi Code CLI",
+      "website": "https://www.kimi.ai/code?aff=omniroute",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "kilocode",
+      "category": "oauth",
+      "name": "Kilo Code",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "cline",
+      "category": "oauth",
+      "name": "Cline",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "clinepass",
+      "category": "oauth",
+      "name": "ClinePass",
+      "website": "https://cline.bot/cline-pass",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "devin-desktop",
+      "category": "oauth",
+      "name": "Devin Desktop",
+      "website": "https://devin.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "devin-cli",
+      "category": "oauth",
+      "name": "Devin CLI",
+      "website": "https://cli.devin.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "codebuddy-cn",
+      "category": "oauth",
+      "name": "CodeBuddy CN",
+      "website": "https://copilot.tencent.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "codebuddy-intl",
+      "category": "oauth",
+      "name": "CodeBuddy Intl",
+      "website": "https://www.codebuddy.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "workbuddy",
+      "category": "oauth",
+      "name": "WorkBuddy",
+      "website": "https://www.workbuddy.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "muse-code",
+      "category": "oauth",
+      "name": "Muse Code (Meta)",
+      "website": "https://ai.developer.meta.com/docs/muse-code/auth",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "freebuff",
+      "category": "oauth",
+      "name": "Freebuff",
+      "website": "https://freebuff.com",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "devin-cli-agentic",
+      "category": "no-auth",
+      "name": "Devin CLI Agentic Bridge",
+      "website": "https://docs.devin.ai/work-with-devin/devin-cli",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "duckduckgo-web",
+      "category": "no-auth",
+      "name": "DuckDuckGo AI Chat",
+      "website": "https://duckduckgo.com/duckchat",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "cloudflare-playground",
+      "category": "no-auth",
+      "name": "Cloudflare AI Playground",
+      "website": "https://playground.ai.cloudflare.com",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "veoaifree-web",
+      "category": "no-auth",
+      "name": "Veo AI Free",
+      "website": "https://veoaifree.com",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "auggie",
+      "category": "no-auth",
+      "name": "Augment (Auggie CLI)",
+      "website": "https://augmentcode.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "zcode",
+      "category": "no-auth",
+      "name": "ZCode (GLM Coding Plan)",
+      "website": "https://zcode.z.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "codex-app-server",
+      "category": "no-auth",
+      "name": "OpenAI Codex (App-Server)",
+      "website": "https://developers.openai.com/codex/cli",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "uncloseai",
+      "category": "no-auth",
+      "name": "UncloseAI",
+      "website": "https://uncloseai.com",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "aihorde",
+      "category": "no-auth",
+      "name": "AI Horde",
+      "website": "https://aihorde.net",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "mlx-gemma",
+      "category": "local",
+      "name": "MLX Gemma 26B",
+      "website": "https://github.com/ml-explore/mlx",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "mlx-qwen",
+      "category": "local",
+      "name": "MLX Qwen 3.8 27B",
+      "website": "https://github.com/ml-explore/mlx",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "ollama-local",
+      "category": "local",
+      "name": "Ollama",
+      "website": "https://ollama.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "lm-studio",
+      "category": "local",
+      "name": "LM Studio",
+      "website": "https://lmstudio.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "vllm",
+      "category": "local",
+      "name": "vLLM",
+      "website": "https://github.com/vllm-project/vllm",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "lemonade",
+      "category": "local",
+      "name": "Lemonade Server",
+      "website": "https://lemonade-server.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "llamafile",
+      "category": "local",
+      "name": "Llamafile",
+      "website": "https://github.com/Mozilla-Ocho/llamafile",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "llama-cpp",
+      "category": "local",
+      "name": "llama.cpp",
+      "website": "https://github.com/ggml-org/llama.cpp",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "triton",
+      "category": "local",
+      "name": "NVIDIA Triton",
+      "website": "https://developer.nvidia.com/triton-inference-server",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "docker-model-runner",
+      "category": "local",
+      "name": "Docker Model Runner",
+      "website": "https://docs.docker.com/ai/model-runner/",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "xinference",
+      "category": "local",
+      "name": "XInference",
+      "website": "https://inference.readthedocs.io",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "oobabooga",
+      "category": "local",
+      "name": "oobabooga",
+      "website": "https://github.com/oobabooga/text-generation-webui",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "sdwebui",
+      "category": "local",
+      "name": "SD WebUI",
+      "website": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "comfyui",
+      "category": "local",
+      "name": "ComfyUI",
+      "website": "https://github.com/comfyanonymous/ComfyUI",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "perplexity-search",
+      "category": "search",
+      "name": "Perplexity Search",
+      "website": "https://docs.perplexity.ai/guides/search-quickstart",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "serper-search",
+      "category": "search",
+      "name": "Serper Search",
+      "website": "https://serper.dev",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "brave-search",
+      "category": "search",
+      "name": "Brave Search",
+      "website": "https://brave.com/search/api",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "exa-search",
+      "category": "search",
+      "name": "Exa Search",
+      "website": "https://exa.ai",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "tavily-search",
+      "category": "search",
+      "name": "Tavily Search",
+      "website": "https://tavily.com",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "anysearch-search",
+      "category": "search",
+      "name": "AnySearch",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "firecrawl",
+      "category": "search",
+      "name": "Firecrawl",
+      "website": "https://firecrawl.dev",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "google-pse-search",
+      "category": "search",
+      "name": "Google Programmable Search",
+      "website": "https://developers.google.com/custom-search/v1/overview",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "nimble-search",
+      "category": "search",
+      "name": "Nimble Search",
+      "website": "https://docs.nimbleway.com/nimble-sdk/web-tools/search",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "parallel-search",
+      "category": "search",
+      "name": "Parallel Search",
+      "website": "https://parallel.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "linkup-search",
+      "category": "search",
+      "name": "Linkup Search",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "searchapi-search",
+      "category": "search",
+      "name": "SearchAPI",
+      "website": "https://www.searchapi.io/docs/google",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "youcom-search",
+      "category": "search",
+      "name": "You.com Search",
+      "website": "https://you.com/business/api/",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "searxng-search",
+      "category": "search",
+      "name": "SearXNG Search",
+      "website": "https://docs.searxng.org",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "x-search",
+      "category": "search",
+      "name": "X Search (Grok)",
+      "website": "https://docs.x.ai/developers/tools/x-search",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "xquik-search",
+      "category": "search",
+      "name": "Xquik X Search",
+      "website": "https://docs.xquik.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "ollama-search",
+      "category": "search",
+      "name": "Ollama Search",
+      "website": "https://ollama.com/settings/keys",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "kimi-search",
+      "category": "search",
+      "name": "Kimi Search",
+      "website": "https://platform.kimi.ai/docs/api/tools-search",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "context7",
+      "category": "search",
+      "name": "Context7 (library docs)",
+      "website": "https://context7.com",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "deepgram",
+      "category": "audio",
+      "name": "Deepgram",
+      "website": "https://deepgram.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "assemblyai",
+      "category": "audio",
+      "name": "AssemblyAI",
+      "website": "https://assemblyai.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "soniox",
+      "category": "audio",
+      "name": "Soniox",
+      "website": "https://soniox.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "elevenlabs",
+      "category": "audio",
+      "name": "ElevenLabs",
+      "website": "https://elevenlabs.io",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "cartesia",
+      "category": "audio",
+      "name": "Cartesia",
+      "website": "https://cartesia.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "fishaudio",
+      "category": "audio",
+      "name": "Fish Audio",
+      "website": "https://fish.audio",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "playht",
+      "category": "audio",
+      "name": "PlayHT",
+      "website": "https://play.ht",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "inworld",
+      "category": "audio",
+      "name": "Inworld",
+      "website": "https://inworld.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "aws-polly",
+      "category": "audio",
+      "name": "AWS Polly",
+      "website": "https://aws.amazon.com/polly/",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "gladia",
+      "category": "audio",
+      "name": "Gladia",
+      "website": "https://gladia.io",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "rev-ai",
+      "category": "audio",
+      "name": "Rev AI",
+      "website": "https://www.rev.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "speechmatics",
+      "category": "audio",
+      "name": "Speechmatics",
+      "website": "https://www.speechmatics.com",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "jules",
+      "category": "cloud-agent",
+      "name": "Google Jules",
+      "website": "https://jules.google",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "devin",
+      "category": "cloud-agent",
+      "name": "Devin",
+      "website": "https://devin.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "codex-cloud",
+      "category": "cloud-agent",
+      "name": "Codex Cloud",
+      "website": "https://openai.com/codex",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "cliproxyapi",
+      "category": "upstream-proxy",
+      "name": "CLIProxyAPI",
+      "website": "https://github.com/router-for-me/CLIProxyAPI",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "9router",
+      "category": "upstream-proxy",
+      "name": "9router",
+      "website": "https://www.npmjs.com/package/9router",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "chatgpt-web",
+      "category": "web-cookie",
+      "name": "ChatGPT Web (Clean Room)",
+      "website": "https://chatgpt.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "chatgpt-web-codex",
+      "category": "web-cookie",
+      "name": "ChatGPT Web (Codex)",
+      "website": "https://chatgpt.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "grok-web",
+      "category": "web-cookie",
+      "name": "Grok Web (Subscription)",
+      "website": "https://grok.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "gemini-web",
+      "category": "web-cookie",
+      "name": "Gemini Web (Free)",
+      "website": "https://gemini.google.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "perplexity-web",
+      "category": "web-cookie",
+      "name": "Perplexity Web (Pro/Max)",
+      "website": "https://www.perplexity.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "blackbox-web",
+      "category": "web-cookie",
+      "name": "Blackbox Web (Subscription)",
+      "website": "https://app.blackbox.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "muse-spark-web",
+      "category": "web-cookie",
+      "name": "Muse Spark Web (Meta AI)",
+      "website": "https://www.meta.ai",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "claude-web",
+      "category": "web-cookie",
+      "name": "Claude Web",
+      "website": "https://claude.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "deepseek-web",
+      "category": "web-cookie",
+      "name": "DeepSeek Web",
+      "website": "https://chat.deepseek.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "copilot-web",
+      "category": "web-cookie",
+      "name": "Microsoft Copilot Web",
+      "website": "https://copilot.microsoft.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "copilot-m365-web",
+      "category": "web-cookie",
+      "name": "Microsoft 365 Copilot (BizChat)",
+      "website": "https://m365.cloud.microsoft/chat",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "t3-web",
+      "category": "web-cookie",
+      "name": "t3.chat (Pro/Free)",
+      "website": "https://t3.chat",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "inner-ai",
+      "category": "web-cookie",
+      "name": "Inner.ai (Subscription)",
+      "website": "https://app.innerai.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "adapta-web",
+      "category": "web-cookie",
+      "name": "Adapta.org (Adapta One Web)",
+      "website": "https://agent.adapta.one",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "lmarena",
+      "category": "web-cookie",
+      "name": "Arena (Free)",
+      "website": "https://arena.ai",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "yuanbao-web",
+      "category": "web-cookie",
+      "name": "Tencent Yuanbao (Free)",
+      "website": "https://yuanbao.tencent.com",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "tencent-aistudio-web",
+      "category": "web-cookie",
+      "name": "Tencent AI Studio (Free)",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "huggingchat",
+      "category": "web-cookie",
+      "name": "HuggingChat (Free)",
+      "website": "https://huggingface.co/chat",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "poe-web",
+      "category": "web-cookie",
+      "name": "Poe Web (Subscription)",
+      "website": "https://poe.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "venice-web",
+      "category": "web-cookie",
+      "name": "Venice Web (Privacy)",
+      "website": "https://venice.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "v0-vercel-web",
+      "category": "web-cookie",
+      "name": "v0 Vercel Web (Code Gen)",
+      "website": "https://v0.dev",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "kimi-web",
+      "category": "web-cookie",
+      "name": "Kimi Web",
+      "website": "https://www.kimi.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "doubao-web",
+      "category": "web-cookie",
+      "name": "Dola Web (ByteDance)",
+      "website": "https://www.dola.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "zenmux-free",
+      "category": "web-cookie",
+      "name": "ZenMux Free (Web)",
+      "website": "https://zenmux.ai",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "tinycms-web",
+      "category": "web-cookie",
+      "name": "TinyCMS Web (Free/Sub)",
+      "website": "https://site.tinycms.xyz",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "zai-web",
+      "category": "web-cookie",
+      "name": "Z.ai Web",
+      "website": "https://chat.z.ai",
+      "hasFree": true,
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "promptql",
+      "category": "web-cookie",
+      "name": "PromptQL (Unofficial/Experimental)",
+      "website": "https://prompt.ql.app",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "notion-web",
+      "category": "web-cookie",
+      "name": "Notion AI Web (Unofficial/Experimental)",
+      "website": "https://www.notion.so",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "adobe-firefly",
+      "category": "web-cookie",
+      "name": "Adobe Firefly (Image/Video)",
+      "website": "https://firefly.adobe.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "hyperagent",
+      "category": "web-cookie",
+      "name": "HyperAgent (Unofficial/Experimental)",
+      "website": "https://hyperagent.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "conol-web",
+      "category": "web-cookie",
+      "name": "Conol (Unofficial/Experimental)",
+      "website": "https://conol.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "twinmind",
+      "category": "web-cookie",
+      "name": "Twinmind (Unofficial/Experimental)",
+      "website": "https://app.twinmind.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "syntx",
+      "category": "web-cookie",
+      "name": "SYNTX.ai (Unofficial/Experimental)",
+      "website": "https://syntx.ai",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "maxai",
+      "category": "web-cookie",
+      "name": "MaxAI",
+      "website": "https://www.maxai.co",
+      "gatewayReady": false,
+      "adapterRequired": true
+    },
+    {
+      "id": "uc",
+      "category": "web-cookie",
+      "name": "UC (uncensored.com)",
+      "website": "https://uncensored.com",
+      "gatewayReady": false,
+      "adapterRequired": true
+    }
+  ],
+  "baseUrlMapped": 47,
+  "note": "Entries converted from OmniRoute provider catalogue. baseUrl entries are curated — verify against each provider's official docs before use. Providers marked adapterRequired need an auth/protocol adapter OmniRoute ships but this Vercel edition does not."
 }
