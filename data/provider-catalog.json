@@ -1,0 +1,21 @@
+{
+  "count": 16,
+  "providers": [
+    {"id":"openai","name":"OpenAI","category":"apikey","website":"https://platform.openai.com/api-keys","baseUrl":"https://api.openai.com/v1","protocol":"openai","verified":true},
+    {"id":"anthropic","name":"Anthropic","category":"apikey","website":"https://console.anthropic.com/","baseUrl":"https://api.anthropic.com","protocol":"anthropic","verified":true},
+    {"id":"google-ai-studio","name":"Google AI Studio","category":"apikey","website":"https://aistudio.google.com/app/apikey","baseUrl":"https://generativelanguage.googleapis.com/v1beta/openai","protocol":"openai"},
+    {"id":"groq","name":"Groq","category":"apikey","website":"https://console.groq.com/keys","baseUrl":"https://api.groq.com/openai/v1","protocol":"openai","verified":true},
+    {"id":" together-ai","name":"Together AI","category":"apikey","website":"https://api.together.ai/settings/api-keys","baseUrl":"https://api.together.xyz/v1","protocol":"openai"},
+    {"id":"fireworks","name":"Fireworks AI","category":"apikey","website":"https://fireworks.ai/","baseUrl":"https://api.fireworks.ai/inference/v1","protocol":"openai"},
+    {"id":"deepseek","name":"DeepSeek","category":"apikey","website":"https://platform.deepseek.com/","baseUrl":"https://api.deepseek.com/v1","protocol":"openai"},
+    {"id":"mistral","name":"Mistral AI","category":"apikey","website":"https://console.mistral.ai/","baseUrl":"https://api.mistral.ai/v1","protocol":"openai"},
+    {"id":"xai","name":"xAI","category":"apikey","website":"https://console.x.ai/","baseUrl":"https://api.x.ai/v1","protocol":"openai"},
+    {"id":"cerebras","name":"Cerebras","category":"apikey","website":"https://cloud.cerebras.ai/","baseUrl":"https://api.cerebras.ai/v1","protocol":"openai"},
+    {"id":"sambanova","name":"SambaNova","category":"apikey","website":"https://cloud.sambanova.ai/","baseUrl":"https://api.sambanova.ai/v1","protocol":"openai"},
+    {"id":"perplexity","name":"Perplexity","category":"apikey","website":"https://www.perplexity.ai/settings/api","baseUrl":"https://api.perplexity.ai","protocol":"openai"},
+    {"id":"openrouter","name":"OpenRouter","category":"apikey","website":"https://openrouter.ai/keys","baseUrl":"https://openrouter.ai/api/v1","protocol":"openai","verified":true},
+    {"id":"nebius","name":"Nebius AI Studio","category":"apikey","website":"https://studio.nebius.ai/","baseUrl":"https://api.studio.nebius.ai/v1","protocol":"openai"},
+    {"id":"novita","name":"Novita AI","category":"apikey","website":"https://novita.ai/","baseUrl":"https://api.novita.ai/v3/openai","protocol":"openai"},
+    {"id":"ollama","name":"Ollama","category":"local","website":"https://ollama.com/","baseUrl":"http://localhost:11434/v1","protocol":"openai"}
+  ]
+}
